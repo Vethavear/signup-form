@@ -1,0 +1,246 @@
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.p2 {
+  padding: 2rem;
+}
+
+.p3 {
+  padding: 3rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+.ts1 {
+  font-size: 1.1rem;
+}
+
+.ts2 {
+  font-size: 1.2rem;
+}
+
+.ts3 {
+  font-size: 1.3rem;
+}
+
+.btext {
+  font-size: 2rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: lighter;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#showcase {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#db55db), to(#00dbde));
+  background-image: linear-gradient(to top, #db55db, #00dbde);
+}
+
+#showcase .form {
+  overflow: hidden;
+  width: 600px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#showcase .form .left {
+  width: 100%;
+  height: 100%;
+  background: url("../img/superrgb-xY0s6aNCV24-unsplash.jpg") center center/cover no-repeat;
+}
+
+#showcase .form .right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #15191c;
+  color: white;
+}
+
+#showcase .form .right h1 {
+  font-size: 1.8rem;
+}
+
+#showcase .form .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#showcase .form .right .row {
+  position: relative;
+}
+
+#showcase .form .right .row input {
+  border: none;
+  border-bottom: 2px solid gray;
+  background: #15191c;
+  margin: 2rem;
+  height: 20px;
+  color: white;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: lighter;
+}
+
+#showcase .form .right .row input:focus, #showcase .form .right .row input:hover {
+  border-color: #00dbde;
+}
+
+#showcase .form .right .row label {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#showcase .form .right .row .hide {
+  opacity: 0;
+}
+
+#showcase .form .right .smashDatWall {
+  -webkit-animation-name: smashTheWall;
+          animation-name: smashTheWall;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes smashTheWall {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  25% {
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes smashTheWall {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  25% {
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#showcase .form .right button {
+  border: none;
+  background: none;
+}
+
+#showcase .form .right button i {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 3.5rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 25%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#showcase .form .right button i:hover {
+  color: #00dbde;
+}
